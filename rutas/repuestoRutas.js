@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Repuesto = require("../temp_modelo/temp_repuesto");
+const Repuesto = require("../modelo/repuesto");
 
 router.get("/", async(req,res)=>{
     const repuesto = await Repuesto.find();
